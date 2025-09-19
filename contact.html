@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Fill in the Details</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="eg,Eunice Nengo"required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="nengoeunice1@gmail.com"required><br><br>
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject"required>
+          <option value="">--Choose a subject--</option>
+          <option value="inquiry">General Inquiry</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="support">Support</option>
+        </select><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <fieldset>
+          <legend>Preferred Contact Method:</legend>
+          <input type="radio" id="emailContact" name="contactMethod" value="email" required>
+          <label for="emailContact">Email</label>
+
+          <input type="radio" id="phoneContact" name="contactMethod" value="phone">
+          <label for="phoneContact">Phone</label>
+        </fieldset><br>
+        <fieldset>
+          <legend>Topics of Interest:</legend>
+          <input type="checkbox" id="webDev" name="topics" value="webdev">
+          <label for="webDev">Web Development</label>
+
+          <input type="checkbox" id="design" name="topics" value="design">
+          <label for="design">Design</label>
+
+          <input type="checkbox" id="ai" name="topics" value="ai">
+          <label for="ai">Artificial Intelligence</label>
+        </fieldset><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>this is the contact page</p>
+  </footer>
+</body>
+</html>

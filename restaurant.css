@@ -1,0 +1,98 @@
+ {
+  margin: 100px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9; 
+  color: rgb(50, 50, 50); 
+}
+
+
+header {
+  background-color: hsl(210, 50%, 20%);
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #fff;
+  color: hsl(210, 50%, 20%);
+  border-radius: 5px;
+}
+
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.menu-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.menu-item {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+  border-color: hsl(210, 50%, 30%);
+}
+
+.price {
+  font-weight: bold;
+  color: #c0392b;
+}
+
+footer {
+  background-color: hsl(210, 50%, 15%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+}
